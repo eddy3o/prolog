@@ -4,3 +4,18 @@
 		(progn 
 			(print (car a))
 			(iterator (cdr a )))))
+
+
+(defun recorre (lista)
+  	(princ (car lista))
+	(if lista 
+	  	(recorre (cdr lista))))
+
+
+(defun pares (a)
+  	(if (null a)
+		nil
+		(progn 
+		  	(if ((mod a 1) 0) 
+		  		(print (car a)))
+			(pares (cdr a)))))
